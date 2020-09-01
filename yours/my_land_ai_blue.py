@@ -1694,22 +1694,6 @@ class situation:
         else:
             return False
 
-    def combat_score(self, damage, type):
-        if type == TANK or type == HELICOPTER:
-            return damage * 10
-        elif type == CAR:
-            if self.color == BLUE:
-                return damage * 7
-            else:
-                return damage * 8
-        elif type == AUTO_CAR:
-            return damage * 5
-        elif type == AUTO_PLANE:
-            return damage
-        elif type == SOILDER:
-            return damage * 4
-        return 0
-        #
 
     #
     def update_bodycount(self):
